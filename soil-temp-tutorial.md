@@ -1,7 +1,7 @@
 
 ```package
 environment = github:tinkertanker/pxt-iot-environment-kit
-
+octopus = github:elecfreaks/pxt-octopus
 ```
 
 
@@ -42,7 +42,7 @@ OLED.writeNumNewLine()
 
 
 ## Step 3
-Go to Octopus  ``||environment: value of DS18B20 at pin P0 ||`` and replace 0 in OLED ``||OLED: show number||`` with this soil temperature block
+Go to Octopus  ``||octopus: value of DS18B20 at pin P0 ||`` and replace 0 in OLED ``||OLED: show number||`` with this soil temperature block
 ```blocks
 OLED.init(128, 64)
 OLED.writeNumNewLine(Environment.Ds18b20Temp(DigitalPin.P0, Environment.ValType.DS18B20_temperature_C))
@@ -51,14 +51,11 @@ OLED.writeNumNewLine(Environment.Ds18b20Temp(DigitalPin.P0, Environment.ValType.
 
 
 ## Step 4
-We need to change the pin number in the code block  Octopus  ``||environment: value of DS18B20 at pin P0 ||``
+We need to change the pin number in the code block  Octopus  ``||octopus: value of DS18B20 at pin P0 ||``
 to match the sensor pin on your board. In the drop down, change pin P0 to P2
 ```blocks
 OLED.init(128, 64)
 OLED.writeNumNewLine(Environment.Ds18b20Temp(DigitalPin.P2, Environment.ValType.DS18B20_temperature_C))
-
-
-
 ```
 
 
